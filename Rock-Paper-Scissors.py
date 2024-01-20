@@ -5,17 +5,25 @@ print("""
 3 - scissors""")
 
 def rand():
-    a = random.randrange(1,3)
-    print(a)
-    if x == 3 and a == 2:
-        print("user wins")
-    elif x == 2 and a == 3:
-        print("user wins")
-    elif x == 1 and a == 1:
-        print("user wins")
+    bot = random.randrange(1,4)
+    if bot == 1:
+        print("rock")
+    elif bot == 2:
+        print("paper")
     else:
-        print("machine wins")
+        print("scissors")
+    
+    if bot == user:
+        print("draw")
+    elif user == 1 and bot == 3:
+        print("User Wins")
+    elif user == 2 and bot == 1:
+        print("User Wins")
+    elif user == 3 and bot == 2:
+        print("User Wins")
+    else:
+        print("Bot Wins")
 
-x = int(input("input: "))
+user = int(input("input: "))
 rand()
 
