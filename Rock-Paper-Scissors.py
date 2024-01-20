@@ -5,7 +5,7 @@ print("""
 3 - scissors""")
 
 def rand():
-    a = random.randrange(1,4)
+    a = random.randrange(1,3)
     print(a)
     if x == 3 and a == 2:
         print("user wins")
