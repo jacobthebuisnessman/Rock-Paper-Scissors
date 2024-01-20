@@ -12,7 +12,7 @@ def rand():
         print("paper")
     else:
         print("scissors")
-    
+##################################
     if bot == user:
         print("draw")
     elif user == 1 and bot == 3:
